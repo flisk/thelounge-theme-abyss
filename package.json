@@ -1,0 +1,24 @@
+{
+  "name": "thelounge-theme-abyss",
+  "version": "1.0.0",
+  "description": "A theme for The Lounge",
+  "main": "package.json",
+  "thelounge": {
+    "css": "abyss.css",
+    "name": "Abyss",
+    "type": "theme"
+  },
+  "license": "GPL-3",
+  "homepage": "https://github.com/sometoby/thelounge-theme-abyss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sometoby/thelounge-theme-abyss.git"
+  },
+  "keywords": [
+    "thelounge",
+    "thelounge-theme"
+  ],
+  "bugs": {
+    "url": "https://github.com/sometoby/thelounge-theme-abyss/issues"
+  }
+}

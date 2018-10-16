@@ -1,0 +1,72 @@
+@import 'morning.css';
+
+:root {
+  --body-bg-color: #111;
+  --window-bg-color: #111;
+  --notice-color: #888;
+  --form-border-color: #333;
+}
+
+* {
+  font-size: 12pt;
+  font-family: sans-serif;
+}
+
+.logo-container {
+  display: none;
+}
+
+/* Hide the speech bubbles */
+#sidebar .chan:before {
+  display: none;
+}
+
+#sidebar .chan.active {
+  font-weight: bold;
+}
+
+#sidebar .chan,
+#sidebar .chan-placeholder
+{
+  padding: 0 14px;
+}
+
+#sidebar .badge {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#sidebar .active,
+#sidebar .active:hover,
+#chat .userlist .count
+{
+  background-color: var(--body-bg-color);
+}
+
+#chat .part .from::before,
+#chat .quit .from::before,
+#chat .join .from::before
+{
+  font-family: monospace;
+  content: '-->';
+}
+
+#form {
+  background-color: var(--body-bg-color);
+  border-color: var(--form-border-color);
+}
+
+#chat .time,
+#chat .from,
+#chat .content
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+#chat .notice .time,
+#chat .notice .text,
+#chat .chan .notice .user
+{
+  color: var(--notice-color) !important;
+}
