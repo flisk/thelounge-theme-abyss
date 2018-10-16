@@ -1,7 +1,9 @@
 # Abyss
 
 <div style="text-align: center">
-  <img src="screenshot.png" alt="Screenshot"/>
+<a href="https://raw.githubusercontent.com/sometoby/thelounge-theme-abyss/master/screenshot.png">
+<img src="screenshot.png" alt="Screenshot"/>
+</a>
 </div>
 
 A theme for [The Lounge](https://github.com/thelounge/thelounge), a web IRC
