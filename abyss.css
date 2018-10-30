@@ -4,7 +4,7 @@
   --body-bg-color: #111;
   --window-bg-color: #111;
   --notice-color: #888;
-  --form-border-color: #333;
+  --border-color: #333;
 }
 
 * {
@@ -14,6 +14,10 @@
 
 .logo-container {
   display: none;
+}
+
+#sidebar {
+  border-right: 1px solid var(--border-color);
 }
 
 /* Hide the speech bubbles */
@@ -58,7 +62,7 @@
 
 #form {
   background-color: var(--body-bg-color);
-  border-color: var(--form-border-color);
+  border-color: var(--border-color);
 }
 
 #chat .time,
