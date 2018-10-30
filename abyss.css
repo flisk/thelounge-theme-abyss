@@ -43,6 +43,10 @@
   background-color: var(--body-bg-color);
 }
 
+#windows .window {
+  box-shadow: none;
+}
+
 #chat .part .from::before,
 #chat .quit .from::before,
 #chat .join .from::before
