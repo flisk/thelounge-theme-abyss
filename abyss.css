@@ -107,7 +107,7 @@ body {
   font-size: 15px;
 }
 
-#footer button, #footer button {
+#footer button {
   color: var(--body-color-muted);
 }
 
