@@ -37,6 +37,10 @@ body {
   color: var(--body-color-muted);
 }
 
+#sidebar .channel-list-item:not([data-type=lobby]):hover {
+  color: var(--body-color);
+}
+
 #sidebar .channel-list-item.active {
   font-weight: bold;
   color: var(--body-color);
