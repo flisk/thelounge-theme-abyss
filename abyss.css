@@ -1,81 +1,117 @@
 @import 'morning.css';
 
 :root {
-  --body-bg-color: #111;
-  --window-bg-color: #111;
-  --notice-color: #888;
+  --body-bg-color: #000;
+  --body-color-muted: #999;
+
   --border-color: #333;
+  --window-bg-color: #0c0c0c;
 }
 
-* {
-  font-size: 12pt;
-  font-family: sans-serif;
+body {
+  font-family: 'Ubuntu Mono', monospace;
 }
 
-.logo-container {
+#viewport {
+  padding: 0;
+}
+
+.window {
+  border-radius: 0;
+}
+
+#sidebar .logo-container {
   display: none;
+}
+
+#sidebar .network .collapse-network {
+  padding-left: 0;
+  width: 26px;
+}
+
+#sidebar .channel-list-item {
+  padding: .2em 1em;
+}
+
+#sidebar .channel-list-item:not([data-type=lobby]) {
+  color: var(--body-color-muted);
+}
+
+#sidebar .channel-list-item.active {
+  font-weight: bold;
+  color: var(--body-color);
+}
+
+/* hide speech bubbles in front of chat names */
+#sidebar .channel-list-item:before {
+  display: none;
+}
+
+#sidebar .channel-list-item.active,
+#sidebar .channel-list-item:hover
+{
+  background: none;
 }
 
 #sidebar {
   border-right: 1px solid var(--border-color);
 }
 
-/* Hide the speech bubbles */
-#sidebar .chan:before {
+#sidebar .channel-list-item .badge {
+  font-weight: bold;
+  font-size: 11px;
+}
+
+#sidebar .channel-list-item .close {
   display: none;
 }
 
-#sidebar .chan.active {
-  font-weight: bold;
+/* chat area */
+
+#chat .msg[data-type="monospace_block"] .text {
+  background-color: #060606;
 }
 
-#sidebar .chan,
-#sidebar .chan-placeholder
-{
-  padding: 1px 14px;
-  line-height: 20px;
+#chat .msg[data-type=notice].highlight .content {
+  color: #48A8FF;
 }
 
-#sidebar .badge {
-  font-weight: bold;
-  font-size: 12px;
+#chat .msg.self .content {
+  color: var(--body-color);
 }
 
-#sidebar .active,
-#sidebar .active:hover,
-#chat .userlist .count
-{
-  background-color: var(--body-bg-color);
-}
-
-#windows .window {
-  box-shadow: none;
-}
-
-#chat .part .from::before,
-#chat .quit .from::before,
-#chat .join .from::before
-{
-  font-family: monospace;
-  content: '-->';
-}
-
-#form {
-  background-color: var(--body-bg-color);
-  border-color: var(--border-color);
+#chat .userlist .count {
+  background: none;
 }
 
 #chat .time,
 #chat .from,
 #chat .content
 {
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
-#chat .notice .time,
-#chat .notice .text,
-#chat .chan .notice .user
-{
-  color: var(--notice-color) !important;
+#form {
+  background: none;
+  border-color: var(--border-color);
+}
+
+/* layout fixes */
+
+#chat button.close, #chat button.mentions, #chat button.menu, #chat button.search, #viewport .lt, #viewport .rt {
+  margin-top: 0;
+}
+
+.header .topic {
+  font-size: 15px;
+}
+
+#footer button, #footer button {
+  color: var(--body-color-muted);
+}
+
+#footer button:hover, #footer button.active {
+  color: #fff;
+  background: none;
 }

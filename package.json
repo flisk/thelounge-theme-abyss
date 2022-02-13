@@ -1,6 +1,6 @@
 {
   "name": "thelounge-theme-abyss",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A theme for The Lounge",
   "main": "package.json",
   "thelounge": {
@@ -9,16 +9,16 @@
     "type": "theme"
   },
   "license": "GPL-3",
-  "homepage": "https://github.com/sometoby/thelounge-theme-abyss",
+  "homepage": "https://github.com/rj45man/thelounge-theme-abyss",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sometoby/thelounge-theme-abyss.git"
+    "url": "git+https://github.com/rj45man/thelounge-theme-abyss.git"
   },
   "keywords": [
     "thelounge",
     "thelounge-theme"
   ],
   "bugs": {
-    "url": "https://github.com/sometoby/thelounge-theme-abyss/issues"
+    "url": "https://github.com/rj45man/thelounge-theme-abyss/issues"
   }
 }
