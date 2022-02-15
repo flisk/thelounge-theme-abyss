@@ -107,6 +107,11 @@ body {
   margin-top: 0;
 }
 
+.header {
+  line-height: 38px;
+  height: 38px;
+}
+
 .header .topic {
   font-size: 15px;
 }
