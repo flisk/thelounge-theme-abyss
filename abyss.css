@@ -64,6 +64,7 @@ body {
 #sidebar .channel-list-item .badge {
   font-weight: bold;
   font-size: 11px;
+  padding: 2px 6px;
 }
 
 #sidebar .channel-list-item .close {
