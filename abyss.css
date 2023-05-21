@@ -12,10 +12,6 @@ body {
   font-family: 'Ubuntu Mono', monospace;
 }
 
-#viewport {
-  padding: 0;
-}
-
 .window {
   border-radius: 0;
 }
