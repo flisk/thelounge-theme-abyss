@@ -98,6 +98,18 @@ body {
   border-color: var(--border-color);
 }
 
+/* settings */
+
+.input {
+  background-color: #222;
+  border-color: #444;
+  color: #fff;
+}
+
+.input::placeholder {
+  color: #555;
+}
+
 /* layout fixes */
 
 #chat button.close, #chat button.mentions, #chat button.menu, #chat button.search, #viewport .lt, #viewport .rt {
