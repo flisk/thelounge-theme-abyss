@@ -121,3 +121,8 @@ body {
   color: #fff;
   background: none;
 }
+
+.settings-menu {
+  margin-left: calc(50% - 540px);
+  top: 44px;
+}
